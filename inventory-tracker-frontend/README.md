@@ -1,27 +1,31 @@
-# InventoryTrackerFrontend
+Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+Can you imagine a world without coffee? You just can’t, right? Coffee shops are gathering places for coffee lovers and people from all walks of life to catch up, study, do business, and to enjoy a beverage and bite to eat. As a small coffee shop owner, there are endless pieces to keep track of in order to succeed, and one of the major parts is ensuring you have enough supply to meet the demand of your loyal customers.
 
-## Development server
+With that in mind, our team decided to enhance a currently archaic supply management system from a local coffee shop. Our project consists of an inventory web app with management tools to optimize inventories, as well as inventory auditing, inventory control, and purchase order management. This inventory tracking app is designed to make small business owners' lives simpler, because tech isn't just for big, major corporations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Features
 
-## Code scaffolding
+• Users can create an account (with authentication and authorization)
+• Users can use a CRUD inventory system linked with an API
+• Users can search for item/category and view results
+• Users can set up and receive push notifications to maintain safety stock
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Technologies
 
-## Build
+• JavaScript
+• Angular
+• Java
+• Spring Boot
+• MySQL
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+What I'll Have to Learn
 
-## Running unit tests
+• How to connect Angular to Spring Boot
+• How to use data from an API
+• How to use responsive Web Design
+• How to create push notifications
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Project Tracker
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://trello.com/invite/b/YawwUMVa/ATTI04b7360531707900392eac567633690739B755EE/liftoff-group-project-trello
