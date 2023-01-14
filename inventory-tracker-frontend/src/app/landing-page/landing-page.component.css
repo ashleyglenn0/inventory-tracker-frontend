@@ -1,0 +1,87 @@
+* {
+    background-color: #d6860d;
+
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    
+}
+
+body {
+    font-size: 35px;
+}
+
+figure * {display: block;}
+
+.style-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* article */
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    height: 100vh; 
+    padding: 0.5in 0;
+ }
+ 
+ article * {grid-column: start / end;}
+ 
+ @media (max-width: 8.5in) {
+    article {grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;}
+ }
+
+
+/* article-images */
+ .size-1 {grid-column: 4/5;}
+ .size-2 {grid-column: 3/6;}
+ .size-3 {grid-column: 2/7;}
+ .size-4 {grid-column: 1/8;}
+
+.size-1 img, .size-2 img, .size-3 img, .size-4 img {width: 100%;}
+
+/* article-text */
+p {
+    margin-bottom: 2.4rem;
+    font: 400 1.0rem/1.5 "Roboto"; 
+    color: hsl(000, 0%, 30%);
+}
+
+@media (max-width: 8.5in) {:root {font-size: 18px;}}
+@media (max-width: 5.0in) {:root {font-size: 16px;}}
+
+hr{
+    background:#faf8f7; 
+    height:3px;
+    width: 100%;
+    margin: auto;
+}
+
+.btn-primary{
+    background-color: #6C757D;
+    border-color: #6C757D;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #262525;
+    border-color: #262525;
+}
+
+.nav-item {
+    display: inline-block;
+    vertical-align: top;
+    height: 50px; 
+    line-height: 80px; 
+    font-size: 20px;
+}
