@@ -24,28 +24,28 @@
                 <div class="form-items">
                     <h3>New User Registration</h3>
                     <p>Fill in the data below.</p>
-                    <form class="requires-validation" novalidate>
+                    <form (ngSubmit)="onSubmit()" class="requires-validation" novalidate>
 
                         <div class="col-md-12">
-                           <input class="form-control" type="text" name="username" placeholder="Username" required>
+                           <input class="form-control" type="text" [(ngModel)]="user.username" name="username" placeholder="Username" required>
                            <div class="valid-feedback">Username field is valid!</div>
                            <div class="invalid-feedback">Username field cannot be blank!</div>
                         </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                            <input class="form-control" type="email" [(ngModel)]="user.email" name="email" placeholder="E-mail Address" required>
                              <div class="valid-feedback">Email field is valid!</div>
                              <div class="invalid-feedback">Email field cannot be blank!</div>
                         </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="text" name="phoneNumber" placeholder="Phone Number" required>
+                            <input class="form-control" type="text" [(ngModel)]="user.phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
                              <div class="valid-feedback">Phone number is valid!</div>
                              <div class="invalid-feedback">Phone number cannot be blank!</div>
                         </div>
 
                        <div class="col-md-12">
-                          <input class="form-control" type="password" name="password" placeholder="Password" required>
+                          <input class="form-control" type="password" [(ngModel)]="user.pwHash" name="password" placeholder="Password" required>
                            <div class="valid-feedback">Password field is valid!</div>
                            <div class="invalid-feedback">Password field cannot be blank!</div>
                        </div>
